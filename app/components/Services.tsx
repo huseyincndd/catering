@@ -64,7 +64,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-gray-50">
+    <section className="py-12 md:py-16">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8">
           {services.map((service, index) => (
@@ -74,7 +74,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="group bg-white rounded-2xl p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
+              className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
             >
               {/* Icon */}
               <div className="mb-6">

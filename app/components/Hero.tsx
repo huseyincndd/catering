@@ -50,9 +50,9 @@ export default function Hero() {
               className="pl-1 md:pl-2 border-l-4 border-orange-500"
             >
               <p className="text-base md:text-lg lg:text-xl text-gray-100 leading-relaxed pl-4">
-                Şantiyelerinize özel hazırlanan, hijyenik ve
+                10 yılı aşkın tecrübemizle, kurumsal ihtiyaçlarınıza özel
                 <br className="hidden md:block" />
-                lezzetli yemeklerle çalışanlarınızın enerjisini yüksek tutun
+                hijyenik ve lezzetli catering çözümleri sunuyoruz
               </p>
             </motion.div>
           </div>

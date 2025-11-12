@@ -1,6 +1,6 @@
 export default function TopHeader() {
   return (
-    <div className="absolute top-0 left-0 right-0 z-30 bg-transparent text-white py-2 text-xs md:text-sm">
+    <div className="absolute top-0 left-0 right-0 z-[95] bg-transparent text-white py-2 text-xs md:text-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between gap-2">
           {/* Left side - Contact info */}

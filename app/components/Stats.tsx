@@ -52,7 +52,7 @@ export default function Stats() {
   ];
 
   return (
-    <section className="relative py-20 md:py-32 bg-white overflow-hidden">
+    <section className="relative py-12 md:py-20 overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-orange-100/40 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gray-100/60 rounded-full blur-3xl"></div>
@@ -100,7 +100,7 @@ export default function Stats() {
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               {/* Card */}
-              <div className="relative bg-white rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 group-hover:border-transparent group-hover:-translate-y-2">
+              <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 group-hover:border-transparent group-hover:-translate-y-2">
                 {/* Icon */}
                 <div className="mb-6 text-orange-500 group-hover:text-white transition-colors duration-300 group-hover:scale-110 transform transition-transform">
                   {stat.icon}

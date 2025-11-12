@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function SupplierCTA() {
   return (
-    <section className="relative py-0 bg-gray-50 overflow-hidden">
+    <section className="relative py-0 overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center min-h-[400px]">
           {/* Left - Image */}

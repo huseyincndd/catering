@@ -33,11 +33,11 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   const navItems = [
-    { name: 'Ana Sayfa', href: '#' },
-    { name: 'Hakkımızda', href: '#hakkimizda' },
-    { name: 'Hizmetlerimiz', href: '#hizmetlerimiz' },
-    { name: 'Menüler', href: '#menuler' },
-    { name: 'İletişim', href: '#iletisim' },
+    { name: 'Ana Sayfa', href: '/' },
+    { name: 'Kurumsal', href: '/kurumsal' },
+    { name: 'Hizmetlerimiz', href: '/hizmetlerimiz' },
+    { name: 'Menüler', href: '/menuler' },
+    { name: 'İletişim', href: '/iletisim' },
   ];
 
   const handleMobileLinkClick = () => {
@@ -49,21 +49,24 @@ export default function Header() {
       <header
         className={`left-0 right-0 w-full transition-all duration-300 ${
           isScrolled
-            ? 'fixed top-0 bg-white shadow-md py-4 z-40'
-            : 'absolute top-10 bg-transparent py-6 z-40'
+            ? 'fixed top-0 bg-white shadow-md py-4 z-[100]'
+            : 'absolute top-10 bg-transparent py-6 z-[100]'
         }`}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="text-2xl md:text-3xl font-playfair font-bold">
-              <a
-                href="#"
-                className={`transition-colors duration-300 ${
-                  isScrolled ? 'text-gray-900' : 'text-white'
-                }`}
-              >
-                Catering
+            <div className="flex items-center">
+              <a href="/" className="block">
+                <img
+                  src={
+                    isScrolled
+                      ? 'https://villaqrmenu.b-cdn.net/atilgancatering/logosiyahatilgan%20(1).png'
+                      : 'https://villaqrmenu.b-cdn.net/atilgancatering/logoatilgan%20(1).png'
+                  }
+                  alt="Atılgan Global Catering"
+                  className="h-12 md:h-16 w-auto transition-all duration-300"
+                />
               </a>
             </div>
 
@@ -83,7 +86,7 @@ export default function Header() {
               
               {/* Teklif Al Button */}
               <a
-                href="#teklif"
+                href="/iletisim"
                 className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                   isScrolled
                     ? 'bg-orange-500 text-white hover:bg-orange-600'
@@ -130,7 +133,7 @@ export default function Header() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 bg-black/50 z-[90] lg:hidden"
+              className="fixed inset-0 bg-black/50 z-[105] lg:hidden"
               onClick={() => setIsMobileMenuOpen(false)}
             />
 
@@ -140,7 +143,7 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'tween', duration: 0.3 }}
-              className="fixed top-0 right-0 h-full w-[280px] bg-white shadow-2xl z-[100] lg:hidden overflow-y-auto"
+              className="fixed top-0 right-0 h-full w-[280px] bg-white shadow-2xl z-[110] lg:hidden overflow-y-auto"
             >
               {/* Close Button */}
               <button
@@ -183,7 +186,7 @@ export default function Header() {
 
                 {/* CTA Button */}
                 <motion.a
-                  href="#teklif"
+                  href="/iletisim"
                   onClick={handleMobileLinkClick}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}

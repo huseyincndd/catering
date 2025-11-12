@@ -5,21 +5,21 @@ import { motion } from 'framer-motion';
 export default function Expectations() {
   const expectations = [
     {
-      title: "Genel Satın Alma Şartları",
-      description: "Yüksek gıda güvenliği kriterlerine uygun olmaları."
+      title: "Hijyen ve Gıda Güvenliği",
+      description: "HACCP ve ISO 22000 standartlarında üretim ve düzenli kalite denetimleri."
     },
     {
-      title: "Gıda Güvenliği Kriterleri",
-      description: "Yüksek gıda güvenliği kriterlerine uygun olmaları."
+      title: "Taze ve Kaliteli Ürünler",
+      description: "Günlük taze ürün tedariki ve mevsimsel malzeme kullanımı."
     },
     {
-      title: "Kalite & Teslimat Standartları",
-      description: "Kalite, maliyet ve teslimat konularında şirketimizin ihtiyaçlarını karşılar nitelikte olmaları."
+      title: "Soğuk Zincir ve Teslimat",
+      description: "Soğuk zincir kurallarına uygun taşıma ve zamanında teslimat garantisi."
     }
   ];
 
   return (
-    <section className="relative py-24 md:py-32 bg-gradient-to-b from-white via-gray-50 to-white overflow-hidden">
+    <section className="relative py-12 md:py-20 overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-20 -left-20 w-96 h-96 bg-orange-100/40 rounded-full blur-3xl"></div>
@@ -41,14 +41,14 @@ export default function Expectations() {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Tedarikçilerimizden
+            Kalite ve Güvenlik
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">
-              Beklentilerimiz
+              İlkelerimiz
             </span>
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Hizmet kalitemizin sürekliliği için tedarikçilerimizi özenle seçiyoruz
+            Müşterilerimize en yüksek kalitede hizmet sunmak için tedarik zincirinin her aşamasında titizlikle çalışıyoruz
           </p>
         </motion.div>
 
@@ -78,7 +78,7 @@ export default function Expectations() {
               </div>
 
               {/* Floating Badge */}
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-2xl p-6 transform group-hover:translate-y-[-8px] transition-transform duration-300">
+              <div className="absolute -bottom-6 -right-6 bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform group-hover:translate-y-[-8px] transition-transform duration-300">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-orange-500 mb-1">100%</div>
                   <div className="text-sm text-gray-600 font-medium">Kalite Garantisi</div>
@@ -96,7 +96,7 @@ export default function Expectations() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="group bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-orange-200 hover:-translate-y-1"
+                className="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-orange-200 hover:-translate-y-1"
               >
                 <div className="flex items-start gap-5">
                   {/* Number Badge */}
@@ -147,10 +147,10 @@ export default function Expectations() {
               className="pt-4"
             >
               <a
-                href="#detay"
+                href="/kurumsal"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:from-orange-600 hover:to-orange-700 transition-all duration-300 group"
               >
-                Detaylı Bilgi
+                Kurumsal Sayfamızı İnceleyin
                 <svg
                   className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
                   fill="none"

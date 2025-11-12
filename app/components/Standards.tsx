@@ -91,7 +91,7 @@ export default function Standards() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-white">
+    <section className="py-12 md:py-16">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         {/* Section Header */}
         <motion.div 
@@ -129,7 +129,7 @@ export default function Standards() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-orange-200 hover:-translate-y-2"
+              className="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-orange-200 hover:-translate-y-2"
             >
               {/* Background Gradient on Hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
