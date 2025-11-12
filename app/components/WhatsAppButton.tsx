@@ -6,15 +6,26 @@ export default function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(true);
   const [showNotification, setShowNotification] = useState(false);
   const [hasShownNotification, setHasShownNotification] = useState(false);
-  const whatsappNumber = "+905306510613"; // Atilgan Global WhatsApp numarası
-  const defaultMessage = "Merhaba! Atilgan Global Catering hizmetleri hakkında bilgi almak istiyorum.";
-  
+
+  const whatsappNumber = "+905306510613";
+  const defaultMessage = "Merhaba! Atılgan Global Catering hizmetleri hakkında bilgi almak istiyorum.";
+
+  // LocalStorage'dan bildirim durumunu kontrol et
+  useEffect(() => {
+    const notificationShown = localStorage.getItem('whatsappNotificationShown');
+    if (notificationShown === 'true') {
+      setHasShownNotification(true);
+    }
+  }, []);
+
   // 10 saniye sonra bildirim göster
   useEffect(() => {
     if (hasShownNotification) return;
+
     const timer = setTimeout(() => {
       setShowNotification(true);
       setHasShownNotification(true);
+      localStorage.setItem('whatsappNotificationShown', 'true');
       
       // Bildirim sesi çal
       playNotificationSound();
@@ -23,22 +34,21 @@ export default function WhatsAppButton() {
     return () => clearTimeout(timer);
   }, [hasShownNotification]);
 
-  // Bildirim sesi fonksiyonu - Web Audio API ile WhatsApp benzeri ses
+  // Bildirim sesi fonksiyonu
   const playNotificationSound = () => {
     try {
-      // Type-safe AudioContext tanımı
       const AudioContextClass = window.AudioContext || (window as typeof window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
       if (!AudioContextClass) {
         return;
       }
+
       const audioContext = new AudioContextClass();
       
-      // Ses çalmak için kullanıcı etkileşimi gerekiyor olabilir, bu yüzden önce resume edelim
       if (audioContext.state === 'suspended') {
         audioContext.resume();
       }
 
-      // İlk ton (ding)
+      // İlk ton
       const oscillator1 = audioContext.createOscillator();
       const gainNode1 = audioContext.createGain();
       oscillator1.type = 'sine';
@@ -52,7 +62,7 @@ export default function WhatsAppButton() {
       oscillator1.connect(gainNode1);
       gainNode1.connect(audioContext.destination);
 
-      // İkinci ton (dong) - 0.15 saniye sonra
+      // İkinci ton
       const oscillator2 = audioContext.createOscillator();
       const gainNode2 = audioContext.createGain();
       oscillator2.type = 'sine';
@@ -73,7 +83,6 @@ export default function WhatsAppButton() {
       oscillator2.start(audioContext.currentTime + 0.15);
       oscillator2.stop(audioContext.currentTime + 0.3);
     } catch (error) {
-      // Eğer ses çalınamazsa, sessiz devam et
       console.log('Ses çalınamadı:', error);
     }
   };
@@ -97,7 +106,7 @@ export default function WhatsAppButton() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-[120]">
+    <div className="fixed bottom-6 right-6 z-[90]">
       {/* WhatsApp Chat Mesajı Bildirimi */}
       {showNotification && (
         <div 
@@ -113,7 +122,7 @@ export default function WhatsAppButton() {
           <div className="bg-[#075e54] px-3 py-2 sm:px-4 sm:py-3 flex items-center gap-2 sm:gap-3">
             {/* Avatar */}
             <div className="relative flex-shrink-0">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center border-2 border-white shadow-lg p-1.5 sm:p-2">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center border-2 border-white shadow-lg p-1">
                 <img 
                   src="https://villaqrmenu.b-cdn.net/atilgancatering/logosiyahatilgan%20(1).png"
                   alt="Atılgan Global"
@@ -127,7 +136,7 @@ export default function WhatsAppButton() {
             {/* İsim ve durum */}
             <div className="flex-1 min-w-0">
               <p className="text-white font-semibold text-xs sm:text-sm truncate">
-                Atilgan Global Catering
+                Atılgan Global Catering
               </p>
               <p className="text-green-100 text-[10px] sm:text-xs flex items-center gap-1">
                 <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-green-300 rounded-full"></span>
@@ -158,7 +167,7 @@ export default function WhatsAppButton() {
             <div className="relative">
               <div className="bg-white rounded-lg rounded-tl-none px-3 py-2 sm:px-4 sm:py-3 shadow-sm border border-gray-200/50 mb-1.5 sm:mb-2">
                 <p className="text-gray-800 text-xs sm:text-sm leading-relaxed">
-                  Merhaba! 👋 Atilgan Global Catering&apos;e hoş geldiniz. Size nasıl yardımcı olabiliriz?
+                  Merhaba! 👋 Atılgan Global Catering&apos;e hoş geldiniz. Size nasıl yardımcı olabiliriz?
                 </p>
               </div>
               
@@ -173,7 +182,7 @@ export default function WhatsAppButton() {
           </div>
 
           {/* Ok işareti */}
-          <div className="absolute -bottom-2 right-6 sm:right-8 w-0 h-0 border-l-6 border-r-6 border-t-6 sm:border-l-8 sm:border-r-8 sm:border-t-8 border-l-transparent border-r-transparent border-t-white"></div>
+          <div className="absolute -bottom-2 right-6 sm:right-8 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] sm:border-l-[8px] sm:border-r-[8px] sm:border-t-[8px] border-l-transparent border-r-transparent border-t-white"></div>
         </div>
       )}
 
@@ -191,14 +200,14 @@ export default function WhatsAppButton() {
           <div className="absolute -bottom-2 right-4 w-0 h-0 border-l-4 border-r-4 border-t-8 border-l-transparent border-r-transparent border-t-white"></div>
         </div>
 
-        {/* Ana Buton */}
+        {/* Ana Buton - Turuncu tema */}
         <button
           onClick={handleWhatsAppClick}
-          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 animate-pulse hover:animate-none group"
+          className="bg-gradient-to-br from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white p-4 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-110 transition-all duration-300 animate-pulse hover:animate-none group"
           aria-label="WhatsApp ile iletişime geç"
         >
           {/* Dış halka animasyonu */}
-          <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20"></div>
+          <div className="absolute inset-0 bg-orange-500 rounded-full animate-ping opacity-20"></div>
           
           {/* WhatsApp Logo */}
           <svg 

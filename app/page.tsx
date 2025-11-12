@@ -11,7 +11,6 @@ import Standards from './components/Standards';
 import SupplierCTA from './components/SupplierCTA';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
 
 export default function Home() {
   return (
@@ -143,7 +142,6 @@ export default function Home() {
       </div>
       
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 }

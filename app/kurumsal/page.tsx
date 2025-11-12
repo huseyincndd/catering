@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import TopHeader from '../components/TopHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import WhatsAppButton from '../components/WhatsAppButton';
 
 export default function KurumsalPage() {
   const projects = [
@@ -438,7 +437,6 @@ export default function KurumsalPage() {
       </div>
 
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 }

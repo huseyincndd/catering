@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import TopHeader from '../components/TopHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import WhatsAppButton from '../components/WhatsAppButton';
 
 export default function HizmetlerimizPage() {
   const services = [
@@ -424,7 +423,6 @@ export default function HizmetlerimizPage() {
       </section>
 
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 }

@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import TopHeader from '../components/TopHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import WhatsAppButton from '../components/WhatsAppButton';
 
 export default function MenulerPage() {
   const menuData = [
@@ -443,7 +442,6 @@ export default function MenulerPage() {
       </section>
 
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 }

@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import TopHeader from '../components/TopHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import WhatsAppButton from '../components/WhatsAppButton';
 
 export default function IletisimPage() {
   const [formData, setFormData] = useState({
@@ -419,7 +418,6 @@ export default function IletisimPage() {
       </section>
 
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 }
