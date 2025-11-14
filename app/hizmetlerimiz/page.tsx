@@ -85,10 +85,10 @@ export default function HizmetlerimizPage() {
     },
     {
       id: 5,
-      title: 'Kutu Yemek',
+      title: 'Kutu Yemek (Lunch Box)',
       subtitle: 'Pratik ve Hijyenik Paket Çözümler',
       description: 'Pratik ve hijyenik paket yemek çözümleri sunuyoruz. Özel ambalajlı menülerimiz, tazeliğini ve sıcaklığını koruyarak size ulaşır.',
-      image: 'https://villaqrmenu.b-cdn.net/atilgancatering/kutuyemek.jpg',
+      image: 'https://villaqrmenu.b-cdn.net/atilgancatering/lunchbox.jpg',
       features: [
         'Özel ambalaj',
         'Tazelik garantisi',
@@ -409,7 +409,7 @@ export default function HizmetlerimizPage() {
                 </svg>
               </a>
               <a
-                href="tel:+905551234567"
+                href="tel:+905443135678"
                 className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-orange-700 text-white font-bold rounded-xl shadow-xl hover:bg-orange-800 transition-all duration-300 text-lg border-2 border-white/20"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

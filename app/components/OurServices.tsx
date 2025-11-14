@@ -28,8 +28,8 @@ export default function OurServices() {
       description: 'Lokasyonunuzda taze ve hijyenik yemek üretimi'
     },
     {
-      title: 'Kutu Yemek',
-      image: 'https://villaqrmenu.b-cdn.net/atilgancatering/kutuyemek.jpg',
+      title: 'Kutu Yemek (Lunch Box)',
+      image: 'https://villaqrmenu.b-cdn.net/atilgancatering/lunchbox.jpg',
       description: 'Pratik ve hijyenik paket yemek çözümleri'
     }
   ];

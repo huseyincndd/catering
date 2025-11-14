@@ -6,15 +6,15 @@ export default function Expectations() {
   const expectations = [
     {
       title: "Hijyen ve Gıda Güvenliği",
-      description: "HACCP ve ISO 22000 standartlarında üretim ve düzenli kalite denetimleri."
+      description: "Tüm üretim süreçlerimizde hijyen kurallarını titizlikle uygulayarak, gıda güvenliği standartlarına uygun hizmet veriyoruz."
     },
     {
       title: "Taze ve Kaliteli Ürünler",
-      description: "Günlük taze ürün tedariki ve mevsimsel malzeme kullanımı."
+      description: "Günlük taze ürün tedariki ile kaliteli malzemeler kullanarak, lezzetli ve sağlıklı yemekler hazırlıyoruz."
     },
     {
-      title: "Soğuk Zincir ve Teslimat",
-      description: "Soğuk zincir kurallarına uygun taşıma ve zamanında teslimat garantisi."
+      title: "Güvenilir Teslimat",
+      description: "TOKİ şantiyeleri ve eğitim kurumlarına zamanında ve güvenli teslimat garantisi ile hizmet veriyoruz."
     }
   ];
 

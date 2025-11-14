@@ -40,8 +40,8 @@ export default function IletisimPage() {
         </svg>
       ),
       title: 'Telefon',
-      info: '+90 (312) 123 45 67',
-      link: 'tel:+903121234567'
+      info: '+90 544 313 56 78',
+      link: 'tel:+905443135678'
     },
     {
       icon: (
@@ -50,8 +50,8 @@ export default function IletisimPage() {
         </svg>
       ),
       title: 'E-posta',
-      info: 'info@atilgancatering.com',
-      link: 'mailto:info@atilgancatering.com'
+      info: 'atilganglobal13@gmail.com',
+      link: 'mailto:atilganglobal13@gmail.com'
     },
     {
       icon: (

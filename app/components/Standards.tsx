@@ -15,8 +15,8 @@ export default function Standards() {
           />
         </svg>
       ),
-      title: "İsteğe Özel Mutfak Ekibi Kurma",
-      description: "İdari ve operasyonel faaliyetlerin de yürütüldüğü merkezimiz ve merkez mutfağımız, Bilkent Üniversitesi'nde bulunmaktadır."
+      title: "Deneyimli Mutfak Ekibi",
+      description: "30 yılı aşkın tecrübesiyle uzman aşçı ve mutfak ekibimiz, günlük taze ve lezzetli yemekler hazırlamaktadır."
     },
     {
       icon: (
@@ -29,8 +29,8 @@ export default function Standards() {
           />
         </svg>
       ),
-      title: "Denetimde Standart",
-      description: "Kurumsal bütünlük inancımız gereğince, merkez ve temsilciliklerin ürün ve hizmet kalitelerinde hiçbir fark bulunmamaktadır."
+      title: "Kalite Kontrol",
+      description: "TOKİ şantiyeleri ve eğitim kurumlarında sunduğumuz tüm hizmetlerde yüksek kalite standardlarını koruyoruz."
     },
     {
       icon: (
@@ -39,12 +39,12 @@ export default function Standards() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={1.5}
-            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
           />
         </svg>
       ),
-      title: "Bildirim Yönetimi",
-      description: "Sağlıklı bilgi akışı için, C-Pack adında kendi bünyemizde bir yazılım geliştirdik. Bütün genelbildirimleri kayıt altına alıyoruz."
+      title: "Zamanında Servis",
+      description: "Belirlenen saatlerde düzenli ve kesintisiz servis garantisi ile öğle ve akşam yemeklerinizi teslim ediyoruz."
     },
     {
       icon: (
@@ -53,12 +53,12 @@ export default function Standards() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={1.5}
-            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
           />
         </svg>
       ),
-      title: "Blast Chiller Sistemi",
-      description: "Aşçılarımız, yemeklerin pişirilmesinde son teknolojiyi içeren konveksiyon fırınları, soğutulmasında ise 'Blast Chiller' sistemini kullanmaktadır."
+      title: "Hijyen Standartları",
+      description: "Modern mutfak ekipmanları ile hijyenik koşullarda yemek üretimi yapıyor, gıda güvenliğine önem veriyoruz."
     },
     {
       icon: (
@@ -71,8 +71,8 @@ export default function Standards() {
           />
         </svg>
       ),
-      title: "Kontrol Aşaması",
-      description: "Her sabah gıda mühendislerimiz, bakteri üremesini engelleyebilmek için yemeklerin iç sıcaklık değerlerini kaydeder."
+      title: "Müşteri Memnuniyeti",
+      description: "Nesibe Aydın Okulları ve TOKİ projeleri gibi kurumsal müşterilerimizin tam memnuniyetini sağlıyoruz."
     },
     {
       icon: (
@@ -85,8 +85,8 @@ export default function Standards() {
           />
         </svg>
       ),
-      title: "Besin Değerleri",
-      description: "Diyetisyenlerimiz, yemeklerin besin değerlerini ayrıntılı biçimde kayıt altına alır, bizler de bu bilgileri müşterilerimizle paylaşırız."
+      title: "Dengeli Menüler",
+      description: "Çeşitli ve dengeli menü seçenekleri ile sağlıklı beslenme prensiplerini göz önünde bulunduruyoruz."
     }
   ];
 

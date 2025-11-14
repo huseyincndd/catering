@@ -15,7 +15,7 @@ export default function Stats() {
           />
         </svg>
       ),
-      number: "120,000",
+      number: "12,000",
       label: "Kuver (Günlük)",
       description: "Günlük servis kapasitemiz"
     },
@@ -30,7 +30,7 @@ export default function Stats() {
           />
         </svg>
       ),
-      number: "235",
+      number: "50+",
       label: "Mutlu Müşteri",
       description: "Memnuniyet oranımız"
     },

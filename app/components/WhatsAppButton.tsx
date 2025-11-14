@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
   const [showNotification, setShowNotification] = useState(false);
   const [hasShownNotification, setHasShownNotification] = useState(false);
 
-  const whatsappNumber = "+905306510613";
+  const whatsappNumber = "+905443135678";
   const defaultMessage = "Merhaba! Atılgan Global Catering hizmetleri hakkında bilgi almak istiyorum.";
 
   // LocalStorage'dan bildirim durumunu kontrol et

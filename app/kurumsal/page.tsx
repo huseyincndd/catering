@@ -9,10 +9,13 @@ export default function KurumsalPage() {
   const projects = [
     { location: 'Hatay Hassa', units: 1754, contractor: 'Yılkanur A.Ş' },
     { location: 'İstanbul Arnavutköy', units: 1584, contractor: 'Yılkanur A.Ş' },
+    { location: 'Toki merasim yeri mevkii', units: 1981, contractor: 'Yılkanur A.Ş' },
     { location: 'Malatya Battalgazi', units: 1014, contractor: 'Yılkanur A.Ş' },
     { location: 'Hatay İskenderun', units: 809, contractor: 'Can İnşaat A.Ş' },
+    { location: 'Sazlıbosna mevki', units: 703, contractor: 'Gaziantep gold yapı inşaat' },
     { location: 'Hatay Ekinci', units: 668, contractor: 'Atlantik Grup A.Ş' },
     { location: 'Kahramanmaraş Nurhak', units: 624, contractor: 'Aydur İnşaat' },
+    { location: 'Esenler', units: 594, contractor: 'Gaziantep gold yapı inşaat' },
     { location: 'Hatay Antakya', units: 588, contractor: 'Yılkanur A.Ş' },
     { location: 'Hatay Antakya', units: 568, contractor: 'Nişantaşı İnşaat' },
     { location: 'Hatay Kırıkhan', units: 548, contractor: 'Tekon İnşaat' }
