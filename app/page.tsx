@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import TopHeader from './components/TopHeader';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -11,6 +12,15 @@ import Standards from './components/Standards';
 import SupplierCTA from './components/SupplierCTA';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+
+export const metadata: Metadata = {
+  title: "Ana Sayfa",
+  description:
+    "Atilgan Global Catering ile şantiyeler ve kurumsal projeler için hijyenik, sürdürülebilir toplu yemek çözümlerini keşfedin.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

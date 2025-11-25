@@ -1,10 +1,20 @@
 'use client';
 
+import type { Metadata } from 'next';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import TopHeader from '../components/TopHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+
+export const metadata: Metadata = {
+  title: "İletişim",
+  description:
+    "Atilgan Global Catering ile teklif almak veya şantiye yemek ihtiyaçlarınızı paylaşmak için iletişime geçin.",
+  alternates: {
+    canonical: "/iletisim",
+  },
+};
 
 export default function IletisimPage() {
   const [formData, setFormData] = useState({

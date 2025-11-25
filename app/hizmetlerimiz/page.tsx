@@ -1,9 +1,19 @@
 'use client';
 
+import type { Metadata } from 'next';
 import { motion } from 'framer-motion';
 import TopHeader from '../components/TopHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+
+export const metadata: Metadata = {
+  title: "Hizmetlerimiz",
+  description:
+    "Toplu yemek, organizasyon catering, yerinde üretim ve lunch box gibi tüm profesyonel hizmetlerimizi keşfedin.",
+  alternates: {
+    canonical: "/hizmetlerimiz",
+  },
+};
 
 export default function HizmetlerimizPage() {
   const services = [

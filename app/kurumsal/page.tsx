@@ -1,9 +1,19 @@
 'use client';
 
+import type { Metadata } from 'next';
 import { motion } from 'framer-motion';
 import TopHeader from '../components/TopHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+
+export const metadata: Metadata = {
+  title: "Kurumsal",
+  description:
+    "Atilgan Global'in 30 yılı aşkın tecrübesiyle kurumsal yapısını, değerlerini ve Türkiye genelindeki projelerini keşfedin.",
+  alternates: {
+    canonical: "/kurumsal",
+  },
+};
 
 export default function KurumsalPage() {
   const projects = [
