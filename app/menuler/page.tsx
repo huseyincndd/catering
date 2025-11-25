@@ -1,19 +1,9 @@
 'use client';
 
-import type { Metadata } from 'next';
 import { motion } from 'framer-motion';
 import TopHeader from '../components/TopHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
-export const metadata: Metadata = {
-  title: "Menüler",
-  description:
-    "Haftalık şantiye yemek listelerimizi inceleyin; dengeli ve besleyici menülerimiz ile çalışanlarınıza enerji katın.",
-  alternates: {
-    canonical: "/menuler",
-  },
-};
 
 export default function MenulerPage() {
   const menuData = [
