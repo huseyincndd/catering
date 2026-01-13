@@ -5,50 +5,56 @@ import { motion } from 'framer-motion';
 export default function References() {
   // Reference company logos - Real construction companies
   const references = [
-    {
-      name: 'Can İnşaat',
-      logo: 'https://demo1.tireyazilim.com/upload/referanslar/can-insaat.webp',
-    },
+    // Devam eden projelerde en çok çalışılan müteahhitler
     {
       name: 'Yılkanur A.Ş',
       logo: 'https://demo1.tireyazilim.com/upload/referanslar/yilkanur-as.webp',
     },
     {
-      name: 'Nişantaşı Yapı A.Ş',
-      logo: 'https://demo1.tireyazilim.com/upload/referanslar/nisantasi-yapi-as.webp',
+      name: 'Gaziantep Gold Yapı',
+      logo: 'https://villaqrmenu.b-cdn.net/atilgancatering/Gemini_Generated_Image_68nojn68nojn68no-Photoroom.png',
     },
     {
-      name: 'Türkiye Diyanet Vakfı',
-      logo: 'https://demo1.tireyazilim.com/upload/referanslar/turkiye-diyanet-vakfi.webp',
+      name: 'MRF Group Tic. İnş. A.Ş',
+      logo: 'https://villaqrmenu.b-cdn.net/atilgancatering/MRF_Group-07.png',
     },
     {
-      name: 'YCG İnşaat Mühendislik',
-      logo: 'https://demo1.tireyazilim.com/upload/referanslar/ycg-insaat-muhendislik.webp',
-    },
-    {
-      name: 'Tekon İnşaat',
-      logo: 'https://demo1.tireyazilim.com/upload/referanslar/tekon-insaat.webp',
-    },
-    {
-      name: 'Metron Yapı',
-      logo: 'https://demo1.tireyazilim.com/upload/referanslar/metron-yapi.webp',
+      name: 'Can İnşaat',
+      logo: 'https://demo1.tireyazilim.com/upload/referanslar/can-insaat.webp',
     },
     {
       name: 'Atlantik Grup',
       logo: 'https://demo1.tireyazilim.com/upload/referanslar/atlantik-grup.webp',
     },
     {
-      name: 'Sondem İnşaat',
-      logo: 'https://demo1.tireyazilim.com/upload/referanslar/sondem-insaat.webp',
-    },
-    {
       name: 'Aydur İnşaat',
       logo: 'https://demo1.tireyazilim.com/upload/referanslar/aydur-insaat.webp',
     },
     {
-      name: 'Gaziantep Gold Yapı',
-      logo: 'https://www.goldyapi.com.tr/uploads/thumb/logo.png',
-      },
+      name: 'Nişantaşı Yapı A.Ş',
+      logo: 'https://demo1.tireyazilim.com/upload/referanslar/nisantasi-yapi-as.webp',
+    },
+    {
+      name: 'Tekon İnşaat',
+      logo: 'https://demo1.tireyazilim.com/upload/referanslar/tekon-insaat.webp',
+    },
+    // Diğer uzun dönemli iş ortakları
+    {
+      name: 'YCG İnşaat Mühendislik',
+      logo: 'https://demo1.tireyazilim.com/upload/referanslar/ycg-insaat-muhendislik.webp',
+    },
+    {
+      name: 'Metron Yapı',
+      logo: 'https://demo1.tireyazilim.com/upload/referanslar/metron-yapi.webp',
+    },
+    {
+      name: 'Sondem İnşaat',
+      logo: 'https://demo1.tireyazilim.com/upload/referanslar/sondem-insaat.webp',
+    },
+    {
+      name: 'Türkiye Diyanet Vakfı',
+      logo: 'https://demo1.tireyazilim.com/upload/referanslar/turkiye-diyanet-vakfi.webp',
+    },
     {
       name: 'Nesibe Aydın Eğitim Kurumları',
       logo: 'https://www.ajansmention.com/wp-content/uploads/2019/01/nesibe-aydin-1.png',
@@ -125,7 +131,9 @@ export default function References() {
                       reference.name === 'Gaziantep Gold Yapı'
                         ? 'scale-[2.1] group-hover:scale-[2.15] lg:scale-[1.2] lg:group-hover:scale-[1.25]'
                         : reference.name === 'Nesibe Aydın Eğitim Kurumları'
-                        ? 'scale-[2.1] group-hover:scale-[2.15] lg:scale-[1.5] lg:group-hover:scale-[1.55]' 
+                        ? 'scale-[2.1] group-hover:scale-[2.15] lg:scale-[1.5] lg:group-hover:scale-[1.55]'
+                        : reference.name === 'MRF Group Tic. İnş. A.Ş'
+                        ? 'scale-[1.4] group-hover:scale-[1.45] lg:scale-[1.1] lg:group-hover:scale-[1.15]'
                         : 'scale-[2.1] group-hover:scale-[2.15]'
                     }`}
                           loading="lazy"

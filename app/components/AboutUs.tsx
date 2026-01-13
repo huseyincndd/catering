@@ -15,7 +15,12 @@ export default function AboutUs() {
     { location: 'Esenler', units: 594, contractor: 'Gaziantep gold yapı inşaat' },
     { location: 'Hatay Antakya', units: 588, contractor: 'Yılkanur A.Ş' },
     { location: 'Hatay Antakya', units: 568, contractor: 'Nişantaşı İnşaat' },
-    { location: 'Hatay Kırıkhan', units: 548, contractor: 'Tekon İnşaat' }
+    { location: 'Hatay Kırıkhan', units: 548, contractor: 'Tekon İnşaat' },
+    // Yeni eklenen projeler
+    { location: 'Gaziantep', units: 3386, contractor: 'MRF Group Tic. İnş. A.Ş' },
+    { location: 'İstanbul Arnavutköy', units: 703, contractor: 'Gaziantep gold yapı inşaat' },
+    { location: 'Hatay Antakya', units: 430, contractor: 'Yılkanur A.Ş' },
+    { location: 'İstanbul Esenler', units: 544, contractor: 'Gaziantep gold yapı inşaat' }
   ];
 
   const features = [
@@ -259,7 +264,7 @@ export default function AboutUs() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
                 <div className="text-5xl md:text-6xl font-bold mb-2">
-                  {projects.reduce((sum, p) => sum + p.units, 0).toLocaleString()}
+                  {projects.reduce((sum, p) => sum + p.units, 0).toLocaleString('tr-TR')}
                 </div>
                 <div className="text-orange-100 text-lg font-medium">Toplam Konut</div>
               </div>
